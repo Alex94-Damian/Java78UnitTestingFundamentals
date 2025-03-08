@@ -53,7 +53,7 @@ public class CalculatorTest {
 
     @Test
     public void testSubstract(){
-        assertEquals(-1.0, calculatorUT.substract(2,3));
+        assertEquals(-1.0, calculatorUT.subtract(2,3));
         assertEquals(-1.0, calculatorUT.add(-2 ,1));
         assertEquals(0.0, calculatorUT.add(2, -2));
 
