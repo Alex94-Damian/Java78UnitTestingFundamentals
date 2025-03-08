@@ -76,7 +76,9 @@ public class CalculatorTest {
         /*
         Al doilea argument al metrodei assertThrows este o interfata functionala neparametrizata
          */
-        Exception exception = assertThrows(ArithmeticException.class, () -> {});
-
+        Exception exception = assertThrows(ArithmeticException.class, () -> {
+            calculatorUT.divide(1,0);
+        });
+        assertEquals("Divide by zero", exception.getMessage());
     }
 }
